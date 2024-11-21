@@ -12,6 +12,7 @@ import {
   UserButton,
 } from "@clerk/nextjs";
 import { Button } from "./ui/button";
+import SearchPage from "../app/(store)/search/page";
 
 const Header = () => {
   return (
@@ -23,6 +24,7 @@ const Header = () => {
         {/* Center Query */}
         <Form
           action="/search"
+          scroll={false}
           className="w-full sm:w-auto sm:flex-1 sm:mx-4 mt-2 sm:mt-0"
         >
           <input
@@ -30,7 +32,9 @@ const Header = () => {
             type="text"
             placeholder="Search for products"
             className="bg-gray-100 text-gray-800 px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 border w-full"
+
           />
+          
         </Form>
         <div className="flex items-center justify-end space-x-2 mt-4 sm:mt-0 flex-1">
           <div className="flex items-center gap-4 xl:gap-8 justify-end">

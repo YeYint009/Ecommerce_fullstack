@@ -17,10 +17,8 @@ export default function RootLayout({
     <ClerkProvider dynamic>
       <html lang="en">
         <body>
-          <main>
             <Header />
             {children}
-          </main>
         </body>
       </html>
     </ClerkProvider>
