@@ -6,7 +6,7 @@ export const structure: StructureResolver = (S) =>
     .title("AcMart Ecommerce Website")
     .items([
       S.documentTypeListItem("category").title("Categories"),
-
+    
       S.divider(),
       ...S.documentTypeListItems().filter(
         (item) => item.getId() && !["post", "category"].includes(item.getId()!)

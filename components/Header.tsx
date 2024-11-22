@@ -11,8 +11,7 @@ import {
   SignedOut,
   UserButton,
 } from "@clerk/nextjs";
-import { Button } from "./ui/button";
-import SearchPage from "../app/(store)/search/page";
+
 
 const Header = () => {
   return (
