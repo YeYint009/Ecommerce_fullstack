@@ -1,11 +1,12 @@
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
+import { getAllCategories } from "@/sanity/lib/products/getAllCategories";
+import { getAllProducts } from "@/sanity/lib/products/getAllProducts";
+import React from "react";
 
-export default function Home() {
-  return (
-    <div>
-        Home
-        <Button>Click</Button>
-    </div>
-  );
-}
+const Home = async () => {
+  const products = await getAllProducts();
+  const categories = await getAllCategories();
+
+  return <div>Home</div>;
+};
+
+export default Home;
